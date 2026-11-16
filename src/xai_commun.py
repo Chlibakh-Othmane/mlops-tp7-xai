@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 # 1. Connexion au serveur MLflow actif
 mlflow.set_tracking_uri("http://127.0.0.1:5001")
 
-# 2. Définition des constantes (avec le nom exact "fraude-tp2")
-NOM, ALIAS = "fraude-tp2", "production"
+# 2. Définition des constantes (avec le nom exact "fraude")
+NOM, ALIAS = "fraude", "production"
 
 # 3. Récupération de la version et du modèle enregistré
 VERSION = MlflowClient().get_model_version_by_alias(NOM, ALIAS)
